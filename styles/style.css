@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+
+    height: 100vh;
+    width: 100%;
+
+    overflow: hidden;
+
+    background-image: url("../img/illberg-ciel.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+/**********/
+/* CIBLES */
+/**********/
+
+.cont-bat {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+
+    color: white;
+    font-size: 20px;
+
+    width: fit-content;
+
+    left: 50%;
+
+    opacity: 1;
+
+    z-index: 5;
+
+    transition: 1s;
+}
+
+.cont-bat1 {
+    opacity: 0;
+    margin-top: 50px;
+}
+
+.cont-bat p {
+    padding: 2px 10px;
+    background: rgba(0, 0, 0, 0.644);
+
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+button {
+    cursor: pointer;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+    opacity: 0.5;
+
+    background: rgb(68, 108, 194);
+    border: none;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.fst {
+    position: absolute;
+
+    transform: translateX(calc(-50% + 30px));
+    top: 158px;
+}
+
+.ensisa {
+    position: absolute;
+
+    transform: translateX(calc(-50% + 150px));
+    top: 225px;
+}
+
+.flsh {
+    position: absolute;
+
+    transform: translateX(calc(-50% - 90px));
+    top: 300px;
+}
+
+.enscmu {
+    position: absolute;
+
+    transform: translateX(calc(-50% + 250px));
+    top: 475px;
+}
+
+/*********/
+/* INFOS */
+/*********/
+
+.infos {
+    position: absolute;
+
+    padding: 20px;
+
+    bottom: 25px;
+
+    background: rgba(0, 0, 0, 0.644);
+    color: white;
+
+    border-radius: 0 10px 10px 0;
+
+    max-width: 60%;
+
+    transform: translateX(-100%);
+
+    transition: 0.5s;
+
+    z-index: 5;
+}
+
+.infos p {
+    margin: 10px 0;
+    font-size: 18px;
+
+    text-align: justify;
+}
+
+li {
+    font-size: 18px;
+}
+
+.nom {
+    font-size: 40px !important;
+}
+
+.show {
+    transform: translateX(0);
+}
+
+/*******/
+/* SVG */
+/*******/
+
+svg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-25%);
+
+    z-index: 1;
+}
+
+path {
+    stroke-dasharray: 0 100;
+    transition: 2s ease-in-out;
+}
+
+.svg5 path {
+    stroke-dasharray: 100 0;
+}
+
+.svg-fst path {
+    stroke-dasharray: 83 20;
+}
+
+.svg-ensisa path {
+    stroke-dasharray: 74 26;
+}
+
+.svg-flsh path {
+    stroke-dasharray: 57.5 42.5;
+}
+
+.svg-enscmu path {
+    stroke-dasharray: 32 68;
+}
+
+/********/
+/* LGBT */
+/********/
+
+.lgbt {
+    position: absolute;
+
+    right: -100px;
+
+    height: 50px;
+    width: 300px;
+
+    transform: rotate(45deg);
+
+    background: linear-gradient(180deg, #FE0000 16.66%,
+            #FD8C00 16.66%, 33.32%,
+            #FFE500 33.32%, 49.98%,
+            #119F0B 49.98%, 66.64%,
+            #0644B3 66.64%, 83.3%,
+            #C22EDC 83.3%);
+}
